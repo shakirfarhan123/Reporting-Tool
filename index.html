@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Link rel="stylesheet" href="style.css"/>
+
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <nav id="navbar">
+    <a class="logo-link" href="/">
+
+      <div id="logo">
+        <img class="header-logo" src="./assests/logoIcon.svg" alt=""/>
+        <span id="navhead">Reporting Tool</span>
+      </div>
+    </a>
+    <ul id="nav" class="mt-2">
+      <li  class="navitem navitem-logo"><a href=""><img src="./assests/logoIcon.svg" alt=""/></a></li>
+      <li class="navitem"><a href="#features">Features</a></li>
+      <li class="navitem"><a href="#demo">Demo</a></li>
+      <li class="navitem"><a href="#">Company</a></li>
+    </ul>
+    <div id="menu">
+      <i class="menubars fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <div class="navbar container-fluid"></div>
+  <div  class="container-lg">
+    <section class="hero-section">
+      <div class="hero-info">
+
+        <span class="short-title">Reporting Tool</span>
+        <h2 class="hero-heading">Simple, Efficient, and Automated warehouse management system</h2>
+        <p class="hero-description">The ideal route-tracking and warehouse management solution for complex and multi-channel deliveries.</p>
+      </div>
+      <!-- <div> -->
+        <img class="hero-img" src="./assests/hero-image.svg" alt=""/>
+      <!-- <div class="flow"> -->
+
+        <img class="flow" style="margin-bottom: 200px;"  src="./assests/flow.svg" alt=""/>
+        <img class="flow-2" src="./assests/flow.svg" alt=""/>
+
+   
+      
+
+    </section>
+   
+
+  </div>
+  <!-- <div class="navbar"></div> -->
+  <section id="features"  class="features">
+    <div class="container">
+      <div class="features-headers">
+        <h2 class="features-title">Features</h2>
+        <p class="features-des">These are the key features to familiarize you with the most
+          important aspects of the product.</p>
+      </div>
+      <div class="individual-features-div">
+        <div class="individual-feature">
+<img class="feature-img" src="./assests/f-1.svg" alt=""/>
+<div>
+  <h3 class="feature-title">Efficient Route Management</h3>
+
+</div>
+<p class="feature-info">Designed with smart splitting work engine to distribute single source file to
+  multiple routes</p>
+        </div>
+        <div class="individual-feature">
+          <img class="feature-img" src="./assests/f-2.svg" alt=""/>
+          <div>
+            <h3 class="feature-title">Fully Automated Panel</h3>
+          
+          </div>
+          <p class="feature-info">Automatic file processing and email dispatching with an easy-to-use web
+            interface to reduce processing time</p>
+                  </div>
+                  <div class="individual-feature">
+                    <img class="feature-img" src="./assests/f-3.svg" alt=""/>
+                    <div>
+                      <h3 class="feature-title">Easy User Management</h3>
+                    
+                    </div>
+                    <p class="feature-info">Create and organize multiple users on the basis of specific warehouses, date,
+                      time and user id</p>
+                            </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="demo" class="explore-section">
+<div class="container">
+  <div class="features-headers explore-headers">
+    <h3 class="explore-header-title">Explore The Solution</h3>
+    <p class="explore-header-des features-des">Here’s an introductory video to better exemplify the features,
+      advantages and the proper use case of the product.</p>
+      <iframe class="video" src="https://www.youtube.com/embed/D38uLsuOQsg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+  </section>
+  <footer>
+    <div style="padding-top: 40px;" class="container">
+      <div class="footer-info">
+        <div class="footer-logo-div">
+          <a class="logo-link" href="#">
+          <div class="logo">
+
+              <img class="logo-img" src="./assests/logo.svg" alt=""/>
+              <h5 class="website-name">Reporting Tool</h5>
+            </div>
+          </a>
+          <h6 class="copywrite-line">&#169; Copyright Reporting Tool. All Rights Reserved</h6>
+        </div>
+        <div class="footer-bav">
+          <div class="menu">
+<ul class="footer-ul">
+  <li>About</li>
+  <li>Features</li>
+  <li>Demo Video</li>
+  <li>Contact</li>
+</ul>
+          </div>
+          <div class="terms">
+           <a class="termscondition" href="#">Terms of conditions</a>
+           <a class="privacypolicy" href="#">Privacy Policy</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/62c6dbdd0d.js" crossorigin="anonymous"></script>
+
+    <script>
+        let menu = document.querySelector("#menu i");
+        let nav = document.getElementById('nav')
+        menu.addEventListener('click',()=>{
+            if (nav.style.top === "-900px"){
+                nav.style.top = "0"
+                menu.classList.remove("fa-bars");
+                menu.classList.add("fa-xmark");
+
+            }
+            else{
+                nav.style.top = "-900px"
+                menu.classList.add("fa-bars");
+                menu.classList.remove("fa-xmark");
+            }
+        })
+    </script>
+</body>
+
+</html>
